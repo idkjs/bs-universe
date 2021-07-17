@@ -5,12 +5,14 @@
   "author": "Gabriel R. Abreu <grsabreu@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build:packages": "node ./bin/build-packages",
     "generate-data": "node generateData.js",
     "add-data": "git add universe.json",
     "lib:new": "npx hygen lib new",
     "react:new": "npx hygen react new"
   },
   "devDependencies": {
+    "fs-extra": "^9.1.0",
     "hygen": "^6.1.0",
     "lerna": "^4.0.0"
   }
